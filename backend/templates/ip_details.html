@@ -1,7 +1,7 @@
 {% extends "base.html" %}
 {% block content %}
 <h2>Login Attempt Details</h2>
-<table>
+<table border="1" cellpadding="6" cellspacing="0">
     <tr>
         <th>Time</th>
         <th>IP Address</th>
@@ -15,7 +15,13 @@
         <td>{{ attempt.ip }}</td>
         <td>{{ attempt.username }}</td>
         <td>{{ attempt.password }}</td>
-        <td>{{ attempt.success }}</td>
+        <td>
+            {% if attempt.success %}
+                ✅
+            {% else %}
+                ❌
+            {% endif %}
+        </td>
     </tr>
     {% endfor %}
 </table>
