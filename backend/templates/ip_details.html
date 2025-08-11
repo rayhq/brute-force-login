@@ -1,0 +1,22 @@
+{% extends "base.html" %}
+{% block content %}
+<h2>Login Attempt Details</h2>
+<table>
+    <tr>
+        <th>Time</th>
+        <th>IP Address</th>
+        <th>Username</th>
+        <th>Password</th>
+        <th>Success</th>
+    </tr>
+    {% for attempt in attempts %}
+    <tr>
+        <td>{{ attempt.time }}</td>
+        <td>{{ attempt.ip }}</td>
+        <td>{{ attempt.username }}</td>
+        <td>{{ attempt.password }}</td>
+        <td>{{ attempt.success }}</td>
+    </tr>
+    {% endfor %}
+</table>
+{% endblock %}
