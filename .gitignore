@@ -1,0 +1,49 @@
+# Logs
+logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+lerna-debug.log*
+
+# Dependency directories
+node_modules/
+.venv/
+
+# Production build folders
+dist/
+dist-ssr/
+
+# Local environment files
+*.local
+.env
+.env.*
+
+# Editor directories and files
+.vscode/
+!.vscode/extensions.json
+.idea/
+.DS_Store
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
+
+# Python cache and compiled files
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+.Python
+
+# Miscellaneous
+*.log
+*.sqlite3
+*.db
+*.pid
+*.seed
+*.tgz
+*.bak
+*.backup
