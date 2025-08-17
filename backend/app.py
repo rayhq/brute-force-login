@@ -11,8 +11,8 @@ CORS(app, supports_credentials=True, origins=["http://localhost:5173"])
 
 # Example in-memory users (passwords hashed)
 users = {
-    "admin": generate_password_hash("password"),
-    "alice": generate_password_hash("Winter2025")
+    "admin": generate_password_hash("password123"),
+    "elliot": generate_password_hash("pa$$w0rd")
 }
 
 FLAG = "FLAG{bruteforce_success_123}"
