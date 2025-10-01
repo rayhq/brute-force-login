@@ -10,7 +10,7 @@ A full-stack project for security testing login pages using brute force techniqu
 - Example templates for displaying IP details
 
 ## Project Structure
-
+```
 brute-force-login/
 │
 ├── backend/ # Python server (Flask/Django)
@@ -21,6 +21,7 @@ brute-force-login/
 ├── README.md # Project documentation
 ├── requirements.txt# Python dependencies
 └── .gitignore # Ignore files
+```
 
 
 ## Getting Started
